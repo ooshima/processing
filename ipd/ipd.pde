@@ -59,6 +59,8 @@ class Agent {
     x = ex * _cellSize;
     y = why * _cellSize;
     strategy = _strategy[int(random(6))];
+    moves = new int[0];
+    scores = new float[0];
   }
   
   void calcNextAction(){
@@ -84,7 +86,10 @@ class Agent {
     }
   }
   
-  void tft(){
+  void tft(Agent agent){
+    if (moves.length == 1){
+      nextAction = 0;
+    }
   // to come
   }
   
@@ -93,6 +98,10 @@ class Agent {
   }
   
   void tullock(){
+  // to come
+  }
+  
+  void calcScore(){
   // to come
   }
   
